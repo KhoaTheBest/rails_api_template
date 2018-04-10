@@ -1,0 +1,4 @@
+server "<%= production_hostname %>",
+       user: "<%= deployer_name %>",
+       roles: %w(web app db),
+       primary: true)
