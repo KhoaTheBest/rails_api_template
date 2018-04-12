@@ -1,3 +1,4 @@
+comment_lines 'require "active_record/railtie"'
 insert_into_file 'config/application.rb', before: /^  end/ do
   <<-'RUBY'
     # CORS Config
