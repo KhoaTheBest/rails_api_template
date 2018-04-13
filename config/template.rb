@@ -1,9 +1,7 @@
 apply 'config/application.rb'
 copy_file 'config/brakeman.yml'
-copy_file 'config/sidekiq.yml'
 copy_file 'config/application.yml'
 remove_file 'config/database.yml'
-remove_file 'config/puma.rb'
 
 if apply_capistrano?
   template 'config/deploy.rb.tt'
