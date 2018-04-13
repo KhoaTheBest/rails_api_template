@@ -27,10 +27,10 @@
 /public/assets/
 
 # Never check passwords into source control!
-/config/database.yml
 /.env
 
 # Ignore *.yml file to prevent password leakage
 /config/application.yml
 /config/secrets.yml
 /config/mongoid.yml
+/config/sidekiq.yml
