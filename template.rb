@@ -41,7 +41,7 @@ def apply_template!
   generate_spring_binstubs
 
   binstubs = %w(
-    annotate brakeman bundler bundler-audit guard rubocop sidekiq spec-core
+    annotate brakeman bundler bundler-audit guard rubocop sidekiq rspec-core
   )
   binstubs.push('capistrano', 'unicorn') if apply_capistrano?
   run_with_clean_bundler_env "bundle binstubs #{binstubs.join(' ')} --force"
